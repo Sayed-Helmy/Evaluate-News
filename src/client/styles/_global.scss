@@ -1,7 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-image: url(../images/concept11.jpg);
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-color: #0b0c14bd;
+  backdrop-filter: blur(50px);
+  opacity: 0.85;
+}
+
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+  outline: none;
 }
 .main-app {
   width: 100%;

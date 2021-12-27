@@ -1,13 +1,32 @@
 header {
   width: 100%;
-  height: 60px;
+  height: 50px;
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 1rem;
+  background-color: #eef5ff;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.4);
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #575965;
+    img {
+      width: 67px;
+      color: #575965;
+    }
+  }
   nav {
     ul {
       display: flex;
       justify-content: center;
       align-items: center;
+      a {
+        color: black;
+        padding: 10px;
+        font-weight: 600;
+      }
     }
   }
 }

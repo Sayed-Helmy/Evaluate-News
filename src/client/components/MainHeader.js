@@ -1,9 +1,13 @@
 import React from "react";
+import logo from "../images/logo.svg";
 
 const MainHeader = () => {
   return (
     <header>
-      <div className="logo">logo</div>
+      <div className="logo">
+        <img src={logo} alt="" />
+        <h1>EVALUATE NEWS</h1>
+      </div>
       <nav>
         <ul>
           <li>

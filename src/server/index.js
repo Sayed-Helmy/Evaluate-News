@@ -22,7 +22,26 @@ app.post("/", async (req, res) => {
   )
     .then((res) => res.json())
     .catch((error) => console.log(error));
-  res.status(200).json(siteData);
+  const {
+    agreement,
+    confidence,
+    irony,
+    model,
+    score_tag,
+    subjectivity,
+    status,
+  } = siteData;
+  res
+    .status(200)
+    .json({
+      agreement,
+      confidence,
+      irony,
+      model,
+      score_tag,
+      subjectivity,
+      status,
+    });
 });
 
 app.listen(port, () => {
