@@ -27,7 +27,12 @@ This is a simple app using a machine learning api that based on technology calle
 ## Setup
 
 you have to check if you have Node.js on you pc
-To run this project, you just type "npm install" then "npm start" in the terminal .
+To run this project, you just type "npm install" then "npm start" in the terminal to start the node server on port 5000 and it will show the files in the dist folder.
+
+npm run build-dev for dev command is for development build.
+npm run build-prod for prod command is for production build.
+
+npm test for testing files in js folder.
 
 - then u can uses the build commendes to build the app and output will be in a folder called "dist" folder.
 

@@ -3,6 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const fetch = (...args) =>
   import("node-fetch").then(({ default: fetch }) => fetch(...args));
+const mockAPIResponse = require("./mockAPI.js");
 const app = express();
 const port = process.env.PORT || 5000;
 
@@ -10,8 +11,8 @@ app.use(express.json());
 app.use(cors());
 app.use(express.static("dist"));
 
-app.get("/", (req, res) => {
-  res.status(200).send("Server is Running");
+app.get("/test", (req, res) => {
+  res.status(200).send(mockAPIResponse);
 });
 
 app.post("/", async (req, res) => {
@@ -31,17 +32,15 @@ app.post("/", async (req, res) => {
     subjectivity,
     status,
   } = siteData;
-  res
-    .status(200)
-    .json({
-      agreement,
-      confidence,
-      irony,
-      model,
-      score_tag,
-      subjectivity,
-      status,
-    });
+  res.status(200).json({
+    agreement,
+    confidence,
+    irony,
+    model,
+    score_tag,
+    subjectivity,
+    status,
+  });
 });
 
 app.listen(port, () => {

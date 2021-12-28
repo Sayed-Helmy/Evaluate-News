@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { icons } from "../images/index";
 import searchIcon from "../images/Icons_Search.png";
 import loadingIcon from "../images/loading.svg";
